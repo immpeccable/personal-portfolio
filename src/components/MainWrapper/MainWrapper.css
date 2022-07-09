@@ -1,5 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css');
+:root{
 
+    --yellow: #ffa818;
+    --text-color: #e9e9e9;
+    --bg-color: #1a1b26;
+
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: var(--text-color);
+}
 
 body{
     margin: 0;
