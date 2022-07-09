@@ -1,0 +1,43 @@
+.intro-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 15%;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.my-image{
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
+}
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.job-description{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.cool-line{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.my-name{
+    font-size: 4rem;
+    color: var(--yellow);
+    font-weight: bolder;
+}
