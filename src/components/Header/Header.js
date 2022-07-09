@@ -1,5 +1,6 @@
 import React from "react"
 import './Header.css'
+import {Link} from 'react-scroll'
 
 let Header = () => {
 
@@ -9,18 +10,24 @@ return <div className="header-wrapper">
     </div>
 
     <div className="header-right-section">
-        <div className="hovered-yellow">
+    <Link className = "hovered-yellow"
+    to="about-me"
+    smooth={true}
+    duration={1500}
+        >
             About
-        </div>
-        <div className="hovered-yellow">
+        </Link>
+        <Link className="hovered-yellow" to="about-me"
+    smooth={true}
+    duration={1500}>
             Skills
-        </div>
-        <div className="hovered-yellow">
+        </Link>
+        <Link className="hovered-yellow">
             Projects
-        </div>
-        <div className="hovered-yellow">
+        </Link>
+        <Link className="hovered-yellow">
             Contact
-        </div>
+        </Link>
     </div>
 
  </div>
