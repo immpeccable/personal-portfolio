@@ -1,0 +1,45 @@
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 15% 3rem 15%;
+}
+
+.contact-title{
+    border-bottom: 4px solid var(--yellow);
+    padding: 1rem 0.2rem;
+}
+.contact-button{
+    outline: none;
+    border: 1px solid var(--yellow);
+    background-color: inherit;
+    color: var(--yellow);
+    padding: 1.4rem;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+}
+.contact-button:hover{
+    background-color: var(--yellow);
+    color: black;
+}
+
+.name-input, .email-input{
+    
+    width: 40rem;
+    height: 2.3rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.message-input{
+    width: 40rem;
+    height: 7rem;
+    font-size: 16px;
+    font-weight: 500;
+}

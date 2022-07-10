@@ -6,6 +6,10 @@
     --bg-color: #1a1b26;
 
 }
+*{
+    font-family: Roboto Slab
+}
+
 
 a{
     outline: none;
@@ -19,7 +23,6 @@ body{
     background-color: black;
     color: var(--text-color);
     font-size: 1.5rem;
-    font-family: Roboto Slab;
 }
 
 
