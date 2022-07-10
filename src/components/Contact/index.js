@@ -27,9 +27,9 @@ let Contact = () => {
     <div className="contact-wrapper">
       <h2 className="contact-title">CONTACT</h2>
 
-      <input onChange={(e)  => {setName(e.target.value)}} className="name-input" placeHolder="Your name..."></input>
-      <input onChange={(e)  => {setEmail(e.target.value)}} className="email-input" placeHolder="Your e-mail..."></input>
-      <textarea onChange={(e)  => {setMessage(e.target.value)}} className="message-input" placeHolder="Your message..."></textarea>
+      <input onChange={(e)  => {setName(e.target.value)}} className="name-input" placeholder="Your name..."></input>
+      <input onChange={(e)  => {setEmail(e.target.value)}} className="email-input" placeholder="Your e-mail..."></input>
+      <textarea onChange={(e)  => {setMessage(e.target.value)}} className="message-input" placeholder="Your message..."></textarea>
       <button onClick={(e) => handleSubmit(e)} className="contact-button">GET IN TOUCH</button>
     </div>
   );
