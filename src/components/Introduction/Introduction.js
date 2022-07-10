@@ -74,7 +74,7 @@ let Introduction = () => {
             className="resume-drive-eng"
             href="https://drive.google.com/file/d/1bcZTiYa-ndwumIBTX00p7JJoktj5Co81/view?usp=sharing"
           >
-            <img className="lang-logo" src={EnglishImage}>
+            <img className="lang-logo" alt="error" src={EnglishImage}>
             </img>
             <div className="lang-resume-text">
                 <div>
@@ -90,7 +90,7 @@ let Introduction = () => {
             className="resume-drive-turkish"
             href="https://drive.google.com/file/d/1CgyWPacAkvsqv401kYV34SZCpYXguyZ5/view?usp=sharing"
           >
-            <img className="lang-logo" src={TurkishImage}>
+            <img className="lang-logo" alt="error" src={TurkishImage}>
             </img>
             <div className="lang-resume-text">
                 <div>

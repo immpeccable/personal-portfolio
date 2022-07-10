@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Contact.css";
-import { send } from 'emailjs-com';
 
 let Contact = () => {
 
