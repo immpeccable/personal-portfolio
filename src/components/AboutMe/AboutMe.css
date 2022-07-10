@@ -5,8 +5,12 @@
     justify-content: center;
     gap: 2rem;
     padding: 7rem 15%;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
     color: var(--text-color);
+    background-image: url("../images/pexels-francesco-ungaro-998641.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
 }
 .about-me-title{
     border-bottom: 2px solid var(--yellow);

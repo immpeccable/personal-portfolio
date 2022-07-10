@@ -8,7 +8,7 @@
     color: white;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
     background-color: var(--bg-color);
 }
 

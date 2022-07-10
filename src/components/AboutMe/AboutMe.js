@@ -2,6 +2,7 @@ import "./AboutMe.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
+//import BackgroundImage from '../images/pexels-francesco-ungaro-998641.jpg/'
 
 let AboutMe = () => {
 
