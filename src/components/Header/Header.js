@@ -17,12 +17,15 @@ return <div className="header-wrapper">
         >
             About
         </Link>
-        <Link className="hovered-yellow" to="about-me"
+        <Link className="hovered-yellow" to="skills-wrapper"
     smooth={true}
     duration={1500}>
             Skills
         </Link>
-        <Link className="hovered-yellow">
+        <Link className="hovered-yellow"
+        smooth={true}
+        duration={1500}
+        to = "projects-wrapper">
             Projects
         </Link>
         <Link className="hovered-yellow">

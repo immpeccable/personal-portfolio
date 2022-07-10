@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Introduction from "../Introduction/Introduction"
 import AboutMe from "../AboutMe/AboutMe"
 import SkillsSection from "../SkillsSection/SkillsSection"
+import Projects from "../Projects/Projects"
 
 let MainWrapper = () => {
 
@@ -12,6 +13,7 @@ let MainWrapper = () => {
         <Introduction/>
         <AboutMe/>
         <SkillsSection/>
+        <Projects/>
     </div>
     
 }
