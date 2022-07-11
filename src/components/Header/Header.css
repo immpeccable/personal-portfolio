@@ -6,15 +6,19 @@
     left: 0;
     display: flex;
     flex-direction: row;
-    padding: 1rem 15rem;
+    padding: 1rem 15%;
     background-color: black;
     color: white;
+    gap: 45rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: 1px solid var(--yellow);
     background-color: var(--bg-color);
     z-index: 1;
     
+}
+.dropdown-wrapper{
+    display: none;
 }
 
 .header-left-section{
@@ -42,3 +46,14 @@
     color: #ffa818;
 
 }
+
+
+@media screen and (max-width: 600px) {
+    .header-right-section {
+      display: none;
+    }
+    .dropdown-wrapper{
+        display: flex;
+    }
+    
+  }

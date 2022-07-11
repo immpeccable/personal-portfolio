@@ -14,7 +14,7 @@
 }
 .about-me-title{
     border-bottom: 2px solid var(--yellow);
-    font-size: 48px;
+    font-size: 1rem;
     font-weight: bolder;
 }
 .metu{
