@@ -6,6 +6,13 @@
     gap: 1rem;
     padding: 0 15% 3rem 15%;
 }
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
 
 .contact-title{
     border-bottom: 4px solid var(--yellow);
