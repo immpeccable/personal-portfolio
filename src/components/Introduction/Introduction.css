@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 6rem 15% 6rem 15%;
+    justify-content: center;
+    gap: 20%;
+    padding: 3rem 0;
     border-bottom: 1px solid var(--yellow);
 }
 
@@ -89,4 +90,8 @@
 
 .resume-drive-eng:hover, .resume-drive-turkish:hover{
     background-color: rgb(245, 245, 181);
+}
+
+@media screen and (max-width: 600px) {
+    
 }
