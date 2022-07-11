@@ -92,7 +92,7 @@
     background-color: rgb(245, 245, 181);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .intro-wrapper{
         gap: 10rem;
     }
