@@ -7,7 +7,7 @@ import EnglishImage from '../images/united-kingdom.png'
 import TurkishImage from '../images/turkey.png'
 let Introduction = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (

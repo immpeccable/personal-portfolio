@@ -7,7 +7,7 @@ import {useEffect} from 'react';
 let AboutMe = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 1000 });
       }, []);
 
   return (
