@@ -25,6 +25,7 @@ let Contact = () => {
       alert("Contact message can not be empty!");
       return;
     }
+    console.log(form.current);
 
     emailjs
       .sendForm(
@@ -48,21 +49,21 @@ let Contact = () => {
       <h2 className="contact-title">CONTACT</h2>
 
       <form className="form-wrapper" ref={form} onSubmit={handleSubmit}>
-        <input type="text"
+        <input name = "from_name" type="text"
           onChange={(e) => {
             setName(e.target.value);
           }}
           className="name-input"
           placeholder="Your name..."
         ></input>
-        <input type="email"
+        <input type="email" name = "email_id"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
           className="email-input"
           placeholder="Your e-mail..."
         ></input>
-        <textarea
+        <textarea name = "message"
           onChange={(e) => {
             setMessage(e.target.value);
           }}
