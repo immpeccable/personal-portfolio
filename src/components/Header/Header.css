@@ -9,13 +9,11 @@
     padding: 1rem 15%;
     background-color: black;
     color: white;
-    gap: 45rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid var(--yellow);
     background-color: var(--bg-color);
-    z-index: 1;
-    
+    z-index: 1;    
 }
 .dropdown-wrapper{
     display: none;
