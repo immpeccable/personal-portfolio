@@ -1,30 +1,53 @@
 import { useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import spinImg from '../images/1497 (1).gif'
 
 let Contact = () => {
   const form = useRef();
 
+  const [isInProcess, setIsInProcess] = useState(false);
+  const [alertContext, setAlertContext] = useState("");
+  const [isAlertShown, setIsAlertShown] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  function setProcessingGif(){
+    if(isInProcess){ 
+
+      return <div className="processing-gif">
+       <img className="spin-gif" src={spinImg} alt = "error"></img>
+
+      </div>
+    }
+  }
+
   function handleSubmit(e) {
+    
     e.preventDefault();
 
+
     if (name === "") {
-      alert("Contact name can not be empty!");
+      setIsAlertShown(true);
+      setAlertContext("Contact name can not be empty!")
       return;
     }
     if (email === "") {
-      alert("Contact email can not be empty!");
+      setIsAlertShown(true);
+      setAlertContext("Contact email can not be empty!")
       return;
     }
     if (message === "") {
-      alert("Contact message can not be empty!");
+      setIsAlertShown(true);
+      setAlertContext("Contact message can not be empty!")
       return;
     }
+    
+    setIsInProcess(true);
+    
+
     console.log(form.current);
 
     emailjs
@@ -36,10 +59,15 @@ let Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setIsInProcess(false);
+          setIsAlertShown(true);
+          setAlertContext("Your e-mail successfully sent!")
+          
         },
         (error) => {
-          console.log(error.text);
+          setIsInProcess(false);
+          setIsAlertShown(true);
+          setAlertContext("There was an error while sending the e-mail, please try again.")
         }
       );
   }
@@ -70,9 +98,11 @@ let Contact = () => {
           className="message-input"
           placeholder="Your message..."
         ></textarea>
-        <input type="submit" className="contact-button" value="GET IN TOUCH">
-          
-        </input>
+        <input type="submit" className="contact-button" value="GET IN TOUCH"></input>
+        {setProcessingGif()}
+        <div className={`alert ${isAlertShown ? 'alert-shown' : 'alert-hidden'}`} onTransitionEnd={() => setIsAlertShown(false)}>
+          <strong>{alertContext}</strong>
+        </div>
       </form>
     </div>
   );
