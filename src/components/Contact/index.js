@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import spinImg from '../images/1497 (1).gif'
 
 let Contact = () => {
