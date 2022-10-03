@@ -72,7 +72,7 @@ let Introduction = () => {
         <div className="resume-section">
           <a
             className="resume-drive-eng"
-            href="https://drive.google.com/file/d/1bcZTiYa-ndwumIBTX00p7JJoktj5Co81/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mA_c7q6YY5AZouVFZHspLnptedgtaBk9/view?usp=sharing"
           >
             <img className="lang-logo" alt="error" src={EnglishImage}>
             </img>
